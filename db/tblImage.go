@@ -3,6 +3,7 @@ package db
 import (
 	"errors"
 	_ "fmt"
+	"g0/config"
 	"time"
 )
 

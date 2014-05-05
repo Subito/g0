@@ -7,25 +7,12 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 	"os"
 	"strconv"
-	"time"
 )
 
 type Db struct {
 	DbFile       string
 	DbImageTable string
 	conn         *sql.DB
-}
-
-type Image struct {
-	Id        int
-	Hash      string
-	Name      string
-	Thumbnail string
-	Timestamp time.Time
-	Url       string
-	Network   string
-	Channel   string
-	User      string
 }
 
 func NewDb(DbFile string) (*Db, error) {
